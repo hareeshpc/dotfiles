@@ -16,3 +16,11 @@ set pastetoggle=<F9>
 nmap <F2> :update<CR>
 vmap <F2> <Esc><F2>gv
 imap <F2> <c-o><F2>
+
+" Preserve selection after indentation. Visual block is still on.
+vmap > >gv
+vmap < <gv
+
+" Map tab to indent in visual mode. Use tab and shift-tab to move instead of >
+vmap <Tab> >gv
+vmap <S-Tab> <gv

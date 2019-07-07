@@ -24,3 +24,9 @@ vmap < <gv
 " Map tab to indent in visual mode. Use tab and shift-tab to move instead of >
 vmap <Tab> >gv
 vmap <S-Tab> <gv
+
+" add yaml stuffs
+"au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
+" Get the file at https://www.vim.org/scripts/script.php?script_id=739
+au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab

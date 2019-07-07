@@ -2,6 +2,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/seoul256.vim'
 Plug 'ConradIrwin/vim-bracketed-paste'
+Plug '/home/hareesh/.fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'https://github.com/Alok/notational-fzf-vim'
+Plug 'vim-airline/vim-airline'
+
 " Initialize plugin system
 call plug#end()
 

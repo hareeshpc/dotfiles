@@ -12,10 +12,13 @@ call plug#end()
 
 "Set the colorscheme
 colo seoul256
-
 "Call :set background=dark|light to switch
-" Use F9 to toggle paste modes (non indent)
-set pastetoggle=<F9>
+
+" Use F9 to toggle paste modes (non indent)(paste)      
+nnoremap <F9> :set invpaste paste?<CR>              
+set pastetoggle=<F9>                                
+set showmode 
+
 
 "Fast write options
 nmap <F2> :update<CR>

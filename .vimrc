@@ -14,7 +14,8 @@ call plug#end()
 colo seoul256
 "Call :set background=dark|light to switch
 
-" Use F9 to toggle paste modes (non indent)(paste)      
+" Use F9 to toggle paste modes (non indent)(paste)
+" Might be redundant via ConradIrwin/vim-bracketed-paste
 nnoremap <F9> :set invpaste paste?<CR>              
 set pastetoggle=<F9>                                
 set showmode 

@@ -4,6 +4,7 @@
 Ref: [profiles-and-rc-files](https://www.linuxjournal.com/content/profiles-and-rc-files)
 ## Login Shell process
 
+```
 -  /etc/profile
   - /etc/profile.d/   # Add any custom profile configs inside here as .sh file
 
@@ -14,17 +15,18 @@ Ref: [profiles-and-rc-files](https://www.linuxjournal.com/content/profiles-and-r
 - .bashrc             # Make sure it is called from one of the above.
 
 - /etc/bashrc         # Usually no change here 
-  /etc/bash.bashrc  
-
+  [or] /etc/bash.bashrc  
+```
 
 ## Interactive Shell Process
 
+```
 - /etc/bashrc         #  
-  /etc/bash.bashrc  
+  [or] /etc/bash.bashrc  
 
 
 - .bashrc            # Called directly without any profile being executed.
-
+```
 This shell doesn't look for any profile information at all, either system-wide 
 or in the user directory. However, because an interactive shell is a "child" process
 of the login shell used to log in initially (either via GUI or SSH), it inherits 

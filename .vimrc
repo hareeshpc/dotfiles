@@ -39,3 +39,7 @@ vmap <S-Tab> <gv
 " Get the file at https://www.vim.org/scripts/script.php?script_id=739
 au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+" Change line number mode with Ctrl+n
+nnoremap <C-n> :exe 'set nu!' &nu ? 'rnu!' : ''
+
